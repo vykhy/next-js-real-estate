@@ -44,7 +44,6 @@ const Banner = ({
 export default function Home({ propertiesForRent, propertiesForSale }) {
   return (
     <Box>
-      <h1>YAY</h1>
       <Banner
         purpose={"RENT A HOME"}
         title1={"Rental homes for"}
@@ -95,3 +94,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+// RESUME 1:20:47
