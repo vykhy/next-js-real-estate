@@ -9,7 +9,7 @@ import noresult from "../assets/images/noresult.svg";
 import { fetchApi } from "../utils/fetchApi";
 
 const Search = ({ properties }) => {
-  const [searchFilter, setSearchFilter] = useState(true);
+  const [searchFilter, setSearchFilter] = useState(false);
   const router = useRouter();
 
   return (
@@ -24,7 +24,7 @@ const Search = ({ properties }) => {
         alignItems={"center"}
         fontWeight={"black"}
         fontSize={"lg"}
-        onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
+        onClick={() => setSearchFilter((prevFilters) => !prevFilters)}
       >
         <Text>Search Property by Filters</Text>
         <Icon paddingLeft={2} width={7} as={BsFilter}></Icon>
